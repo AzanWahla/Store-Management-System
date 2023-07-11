@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddOrderScreen">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="109.0" layoutY="39.0" prefHeight="63.0" prefWidth="349.0" text="Customer Details">
+         <font>
+            <Font name="Baskerville Old Face" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="newCustomer" layoutX="106.0" layoutY="151.0" mnemonicParsing="false" onAction="#NewCustomer" prefHeight="95.0" prefWidth="105.0" text="New Customer" />
+      <Button fx:id="back" layoutX="190.0" layoutY="323.0" mnemonicParsing="false" onAction="#backScreen" text="Back" />
+      <Button fx:id="oldCustomer" layoutX="353.0" layoutY="151.0" mnemonicParsing="false" onAction="#OldCustomer" prefHeight="95.0" prefWidth="105.0" text="Old Customer" />
+      <Button fx:id="close" layoutX="327.0" layoutY="323.0" mnemonicParsing="false" onAction="#close" text="Close" />
+   </children>
+</AnchorPane>

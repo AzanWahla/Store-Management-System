@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Screen">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="82.0" layoutY="53.0" prefHeight="79.0" prefWidth="437.0" text="Welcome To Store Management System" textFill="#282727">
+         <padding>
+            <Insets top="3.0" />
+         </padding>
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="manager" layoutX="102.0" layoutY="157.0" mnemonicParsing="false" onAction="#managerScreen" prefHeight="125.0" prefWidth="120.0" text="Manager" />
+      <Button fx:id="employee" layoutX="385.0" layoutY="157.0" mnemonicParsing="false" onAction="#employeeScreen" prefHeight="125.0" prefWidth="120.0" text="Employee" />
+      <Button fx:id="back" layoutX="170.0" layoutY="325.0" mnemonicParsing="false" onAction="#backScreen" text="Back" />
+      <Button fx:id="close" layoutX="385.0" layoutY="325.0" mnemonicParsing="false" onAction="#closeScreen" text="Close" />
+   </children>
+</AnchorPane>

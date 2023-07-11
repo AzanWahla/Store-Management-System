@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DisplayCustomerScreen">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="131.0" layoutY="53.0" prefHeight="62.0" prefWidth="375.0" text="Display Customer Section">
+         <font>
+            <Font name="Baskerville Old Face" size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="68.0" layoutY="121.0" prefHeight="200.0" prefWidth="481.0">
+         <columns>
+            <TableColumn fx:id="ColID" prefWidth="107.0" text="Customer ID" />
+            <TableColumn fx:id="ColName" minWidth="5.0" prefWidth="119.0" text="Customer Name" />
+            <TableColumn fx:id="ColAddress" prefWidth="142.0" text="Customer Address" />
+            <TableColumn fx:id="ColPhone" prefWidth="112.0" text="Customer Phone" />
+         </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="165.0" layoutY="347.0" mnemonicParsing="false" onAction="#backScreen" prefHeight="31.0" prefWidth="76.0" text="Back" />
+      <Button fx:id="close" layoutX="373.0" layoutY="347.0" mnemonicParsing="false" onAction="#closeScreen" prefHeight="31.0" prefWidth="92.0" text="Close" />
+   </children>
+</AnchorPane>

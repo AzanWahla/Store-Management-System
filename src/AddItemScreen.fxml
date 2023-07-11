@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddItemScreen">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="111.0" layoutY="33.0" prefHeight="62.0" prefWidth="375.0" text="Add Item Section">
+         <font>
+            <Font name="Baskerville Old Face" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="itemID" layoutX="215.0" layoutY="113.0" promptText="Item ID" />
+      <TextField fx:id="itemName" layoutX="215.0" layoutY="152.0" promptText="Item Name" />
+      <TextField fx:id="itemPrice" layoutX="215.0" layoutY="188.0" promptText="Item Price" />
+      <TextField fx:id="itemQuantity" layoutX="215.0" layoutY="226.0" promptText="Item Quantity" />
+      <RadioButton fx:id="householdItem" layoutX="215.0" layoutY="302.0" mnemonicParsing="false" onAction="#HouseholdItem" text="Household" />
+      <RadioButton fx:id="groceryItem" layoutX="300.0" layoutY="302.0" mnemonicParsing="false" onAction="#GroceryItem" text="Grocery" />
+      <Label fx:id="itemType" alignment="CENTER" layoutX="202.0" layoutY="274.0" prefHeight="21.0" prefWidth="106.0" text="Item Type :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="addItem" layoutX="416.0" layoutY="343.0" mnemonicParsing="false" onAction="#AddItem" text="Add" />
+      <Button fx:id="clear" layoutX="268.0" layoutY="343.0" mnemonicParsing="false" onAction="#clearScreen" text="Clear" />
+      <Button fx:id="back" layoutX="153.0" layoutY="343.0" mnemonicParsing="false" onAction="#backScreen" text="Back" />
+   </children>
+</AnchorPane>

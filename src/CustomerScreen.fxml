@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerScreen">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="150.0" layoutY="54.0" text="Customer Section " AnchorPane.bottomAnchor="306.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="54.0">
+         <font>
+            <Font name="Baskerville Old Face" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="addCustomer" layoutX="98.0" layoutY="138.0" mnemonicParsing="false" onAction="#addCustomerScreen" prefHeight="41.0" prefWidth="105.0" text="Add Customer" />
+      <Button fx:id="updateCustomer" layoutX="382.0" layoutY="249.0" mnemonicParsing="false" onAction="#updateCustomerScreen" prefHeight="41.0" prefWidth="116.0" text="Update Customer" />
+      <Button fx:id="deleteCustomer" layoutX="98.0" layoutY="249.0" mnemonicParsing="false" onAction="#deleteCustomerScreen" prefHeight="41.0" prefWidth="105.0" text="Delete Customer" />
+      <Button fx:id="displayCustomer" layoutX="382.0" layoutY="138.0" mnemonicParsing="false" onAction="#displayCustomerScreen" prefHeight="41.0" prefWidth="116.0" text="Display Customer" />
+      <Button fx:id="back" layoutX="177.0" layoutY="329.0" mnemonicParsing="false" onAction="#backScreen" text="Back" />
+      <Button fx:id="close" layoutX="356.0" layoutY="329.0" mnemonicParsing="false" onAction="#closeScreen" text="Close" />
+   </children>
+</AnchorPane>

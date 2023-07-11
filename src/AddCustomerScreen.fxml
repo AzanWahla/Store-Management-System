@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddCustomerScreen">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="121.0" layoutY="43.0" prefHeight="62.0" prefWidth="375.0" text="Add Customer Section">
+         <font>
+            <Font name="Baskerville Old Face" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerID" layoutX="226.0" layoutY="143.0" promptText="Customer ID" />
+      <TextField fx:id="customerName" layoutX="225.0" layoutY="181.0" promptText="CustomerName" />
+      <TextField fx:id="customerAddress" layoutX="225.0" layoutY="218.0" promptText="Customer Address" />
+      <TextField fx:id="customerPhone" layoutX="225.0" layoutY="258.0" promptText="Customer Phone" />
+      <Button fx:id="addCustomer" layoutX="386.0" layoutY="328.0" mnemonicParsing="false" onAction="#AddCustomer" text="Add" />
+      <Button fx:id="clear" layoutX="266.0" layoutY="328.0" mnemonicParsing="false" onAction="#clearScreen" text="Clear" />
+      <Button fx:id="back" layoutX="161.0" layoutY="328.0" mnemonicParsing="false" onAction="#backScreen" text="Back" />
+
+   </children>
+</AnchorPane>

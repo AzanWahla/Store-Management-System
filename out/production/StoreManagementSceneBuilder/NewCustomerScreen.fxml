@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewCustomerScreen">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="62.0" prefWidth="236.0" text="Add Customer">
+         <font>
+            <Font name="Baskerville Old Face" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerID" layoutX="43.0" layoutY="107.0" promptText="Customer ID" />
+      <TextField fx:id="customerName" layoutX="43.0" layoutY="150.0" promptText="CustomerName" />
+      <TextField fx:id="customerAddress" layoutX="43.0" layoutY="194.0" promptText="Customer Address" />
+      <TextField fx:id="customerPhone" layoutX="43.0" layoutY="238.0" promptText="Customer Phone" />
+      <Button fx:id="reset" layoutX="464.0" layoutY="522.0" mnemonicParsing="false" onAction="#resetScreen" prefHeight="30.0" prefWidth="78.0" text="Reset" />
+      <Button fx:id="back" layoutX="172.0" layoutY="522.0" mnemonicParsing="false" onAction="#backScreen" prefHeight="30.0" prefWidth="78.0" text="Back" />
+      <Button fx:id="addCustomer" layoutX="152.0" layoutY="288.0" mnemonicParsing="false" onAction="#AddCustomer" text="Add" />
+      <Button fx:id="clearCustomer" layoutX="51.0" layoutY="288.0" mnemonicParsing="false" onAction="#ClearCustomerScreen" text="Clear" />
+      <TableView fx:id="table" layoutX="236.0" layoutY="28.0" prefHeight="275.0" prefWidth="437.0">
+        <columns>
+          <TableColumn fx:id="ColID" prefWidth="88.0" text="Item ID" />
+          <TableColumn fx:id="ColName" prefWidth="99.0" text="Item Name" />
+            <TableColumn fx:id="ColPrice" text="Item Price" />
+            <TableColumn fx:id="ColQuantity" prefWidth="94.0" text="Item Quantity" />
+            <TableColumn fx:id="ColQuantity2" prefWidth="75.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <TextField fx:id="itemID" layoutX="43.0" layoutY="374.0" promptText="Item ID" />
+      <TextField fx:id="itemName" layoutX="43.0" layoutY="432.0" promptText="Item Name" />
+      <Label fx:id="orlabel" layoutX="104.0" layoutY="407.0" text="OR" />
+      <Button fx:id="searchID" layoutX="383.0" layoutY="374.0" mnemonicParsing="false" onAction="#SearchID" text="Search" />
+      <Button fx:id="searchName" layoutX="383.0" layoutY="430.0" mnemonicParsing="false" onAction="#SearchName" text="Search" />
+      <Button fx:id="close" layoutX="313.0" layoutY="522.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="78.0" text="Close" />
+      <Label fx:id="amount" layoutX="542.0" layoutY="323.0" prefHeight="47.0" prefWidth="141.0" text="Amount :" />
+      <Button fx:id="purchase" layoutX="503.0" layoutY="403.0" mnemonicParsing="false" onAction="#Purchase" prefHeight="55.0" prefWidth="164.0" text="Purchase" />
+      <Label fx:id="isFound" layoutX="51.0" layoutY="474.0" prefHeight="18.0" prefWidth="152.0" />
+      <Spinner fx:id="idSpinner" layoutX="212.0" layoutY="376.0" />
+      <Spinner fx:id="nameSpinner" layoutX="212.0" layoutY="432.0" />
+   </children>
+</AnchorPane>
